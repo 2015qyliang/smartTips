@@ -60,7 +60,7 @@ map_len=32
 ''' > config.file
 echo "q1="$workpath"/"$forward"clean.fq" >> config.file
 echo "q2="$workpath"/"$reverse"clean.fq" >> config.file
-for kmer in 21 31 41 51 61 71 81 91 101,111,121
+for kmer in 21 31 41 51 61 71 81 91 101 111 121
 do
 	if [[ $kmer -lt 63 ]]; then
 		mkdir "kmer_"$kmer
