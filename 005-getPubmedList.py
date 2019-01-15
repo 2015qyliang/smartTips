@@ -1,7 +1,12 @@
 # author: qyliang
 # email: qyliang2017@gmail.com
-# time: 2019-01-14
+# time: 2019-01-15
 # Description: download IJSEM.pdf, searched from pubmed
+
+# search following string in NCBI-Pubmed and send PubmedId into pubmed.txt
+# (("International journal of systematic and evolutionary microbiology"[Journal])) 
+# AND (marine or sea or seawater or ocean or bay or intertidal or costal or beach 
+# or sponges or vent or oyster or shark or whale or coral or alga)
 
 import requests
 import re
