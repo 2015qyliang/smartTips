@@ -32,4 +32,5 @@ publist = [ line.strip() for line in open('pubmed.txt').readlines() ]
 for pub in publist:
 	getPubmed(pub)
 	print('which downloaded: ',pub)
-	open('Downloaded.txt','a').write(pub)
+	open('Downloaded.txt','a').write(pub) # for win
+	#open('Downloaded.txt','a').write(pub + '\n') # for linux
