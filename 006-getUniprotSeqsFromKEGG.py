@@ -33,7 +33,7 @@ if html.status_code == 200:
 		if seqHtml.status_code == 200:
 			seqmatch = re.findall( r'(     )([\w\s]{5,70})(\n)', seqHtml.text)
 			# get row sequence
-			seqList = [ line[1].replace(' ', '') for line in seqmatch ]
+			seqList = [ line[1].replace(' ', '') for line in seqmatch if line[1].replace(' ', '').isupper() ]
 			seqs = ''.join(seqList)
 			newseq.append('>' + seqid + '\n' + seqs + '\n')
 			print('---- ', ko, ' -- ',order , ' of ',seqsNum, '  --  ' , seqid)
